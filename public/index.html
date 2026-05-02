@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>F1 Quizmaster</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="style.css" />
+    <script defer type="module" src="app.js"></script>
+</head>
+
+<body class="min-h-screen">
+    <header class="mx-auto w-full max-w-4xl pb-0">
+        <div class="stats shadow w-full">
+            <div class="stat">
+                <div class="stat-title">Current Score</div>
+                <div id="scoreDisplay" class="stat-value text-primary">0</div>
+            </div>
+            <div class="stat">
+                <div class="stat-title">Model</div>
+                <div id="modelDisplay" class="stat-value text-sm opacity-70">Waiting...</div>
+            </div>
+        </div>
+    </header>
+    <main class="mx-auto flex min-h-auto w-full max-w-4xl flex-col">
+        <section class="card shadow-xl flex-1">
+            <div class="card-body gap-4">
+                <div class="flex items-center gap-2">
+                    <h1 class="card-title">F1 Quizmaster</h1>
+                    <button id="helpButton" class="btn btn-sm btn-outline" aria-label="Show quiz info">?</button>
+                </div>
+
+                <div id="messages" class="messages rounded-box p-3"></div>
+
+                <div id="choicesArea" class="mt-4">
+                    <div id="choicesContainer" class="flex flex-wrap gap-2"></div>
+                    <div id="loadingIndicator" class="mt-3 hidden items-center gap-2 text-sm opacity-70">
+                        <span class="loading loading-spinner loading-sm"></span>
+                        <span>Waiting for answer...</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <dialog id="introDialog" class="modal">
+        <div class="modal-box">
+            <h3 class="font-bold text-lg">Welcome to F1 Quizmaster</h3>
+            <p class="py-2">You will get 10 multiple-choice Formula 1 questions.</p>
+            <p class="pb-2">Select one answer button for each question. Your score updates live after every answer.</p>
+            <p class="pb-4">Try to get all 10 right. Good luck!</p>
+            <div class="modal-action mt-0">
+                <button id="introCloseButton" class="btn btn-primary">Close</button>
+            </div>
+        </div>
+    </dialog>
+</body>
+
+</html>

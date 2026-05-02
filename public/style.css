@@ -1,0 +1,114 @@
+.messages {
+    min-height: 20rem;
+    max-height: calc(100vh - 18rem);
+    overflow-y: auto;
+    background-color: #333333 !important;
+}
+
+.chat-bubble {
+    white-space: pre-wrap;
+    word-break: break-word;
+}
+
+/* Formula 1 Theme */
+.chat-bubble-primary {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    border: none;
+}
+
+.chat-bubble-secondary {
+    background-color: #dc0000;
+    color: #ffffff;
+    border: none;
+}
+
+body {
+    background: #1e1e1e;
+}
+
+.bg-base-200 {
+    background-color: #1e1e1e !important;
+}
+
+.bg-base-100 {
+    background-color: #262626 !important;
+    border: 1px solid #dc0000;
+}
+
+.btn {
+    border-color: #dc0000;
+    color: #ffffff;
+}
+
+.btn-outline {
+    border-color: #dc0000;
+    color: #dc0000;
+    background-color: transparent;
+}
+
+.btn-outline:hover {
+    background-color: #dc0000;
+    border-color: #dc0000;
+    color: #ffffff;
+}
+
+.btn-primary {
+    background-color: #dc0000;
+    border-color: #dc0000;
+}
+
+.btn-primary:hover {
+    background-color: #b00000;
+    border-color: #b00000;
+}
+
+.stat-value {
+    color: #dc0000 !important;
+    background-color: rgba(255, 255, 255, 0.04);
+    padding: 0.35rem 0.8rem;
+    border-radius: 0.375rem;
+    border: 1px solid rgba(220, 0, 0, 0.12);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 3rem;
+    height: auto;
+    text-align: center;
+}
+
+.stat-title {
+    color: #ffffff;
+    opacity: 0.8;
+}
+
+.card {
+    background-color: #262626;
+    border: 1px solid #dc0000;
+}
+
+.card-title {
+    color: #dc0000;
+}
+
+.chat-footer {
+    color: #ffffff !important;
+    opacity: 0.95 !important;
+    font-weight: 600;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+}
+
+#loadingIndicator {
+    color: #ffffff !important;
+    opacity: 1 !important;
+    font-size: 0.98rem;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
+}
+
+#loadingIndicator span {
+    color: #ffffff !important;
+}
+
+#loadingIndicator .loading {
+    filter: brightness(2) saturate(1.2);
+}
